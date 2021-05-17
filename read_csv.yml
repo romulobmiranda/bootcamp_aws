@@ -1,0 +1,8 @@
+# Read a CSV file without headers
+- name: Read users from CSV file and return a list
+  community.general.read_csv:
+    path: usuario.csv
+    fieldnames: usuario,grupo,senha
+    delimiter: ','
+  register: usuario
+  delegate_to: localhost
