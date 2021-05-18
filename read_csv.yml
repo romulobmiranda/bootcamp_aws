@@ -1,5 +1,7 @@
+---
+- hosts: all
 # Read a CSV file without headers
-- name: Read users from CSV file and return a list
+- name: Return a list
   community.general.read_csv:
     path: usuario.csv
     fieldnames: usuario,grupo,senha

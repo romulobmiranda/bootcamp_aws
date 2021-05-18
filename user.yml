@@ -1,0 +1,7 @@
+---
+
+- name: Create IAM user
+  iam:
+    iam_type: user
+    name: romulo.bentes
+    state: present
